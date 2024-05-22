@@ -1,0 +1,15 @@
+Form handling and working with forms :
+
+*  is mai ham is bat ko yakini bnaty hai ky haam forms par backend processes achy sy kar saky hai or koi bhi from data chaye kisi bhi library,framework ya template sy aya ho ham osy manage karny ky kabil ho. 
+*  cookies and sessions :
+cookies or sessions ka concept bhut zarori hai.is ko ham kuch is tarha samjh sakty hai. jab ham frontend sy backend par koi request bhaijty hai to server hamy nahi janta hoga to wo hamy login karny ko khye ga. phr ham login kar ky request send karygy to server hamy jan jye ga or hamy kuch unique string dy ga jo hamary frontend par store ho jye ga. ab agli bar jab bhi ham server ko reuest bhiajy gy to wo string bhi automaticaly hamari request ky sath jye gi. is liye server hamy dobara login karny ka nahi boly ga wo osi string sy jan jye ga ky ye request kis n send ki hai.jab tak ye string hamary frontend oy store hai ham without login koi bhi request bhiajy gy or server hamy response dy ga. 
+      is sar process mai jo string frontend py store hoi hai wo Cooki khelati hai.
+      aik login sy logout hony tak ka time session khelata hai.
+*  framework vs library : 
+framework hamy aik flow daita hai matlab jo bhi kam hoga wo is flow ky motabik hoga. is flow ky motabik kam karna zarori hai. jaisy express js aik framework hai wo hamy aik flow daita hai.
+library hamy bhut sy tools daiti hai jin ko ham apni marzi sy jab chye jahn chye use kar sakty hai. jaisy react js aik library hai.
+*  koi bhi data jo ham frontend forms ky zarye backend mai send karty hai wo isi format mai send nahi hota jis mai user ny frontend py likha hai. balky wo bhut sy data ky mixup hota hai matlab wo readable form mai nahi hota. is liye jab bhi express js mai koi frontend sy request ayi gi to express js is code sy data ko readable bnaye ga.
+     app.use(express.json());
+     app.use(express.urlencEoded({extended : true}));
+
+yaha hm clearly daikh sakty hai ky ye aik middleware hai to iska matlab hai ky user ko route par response dainy sy phly wo isy readable form mai laye ga or phr baki ky process hoga.
